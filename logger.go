@@ -83,7 +83,7 @@ func GetLogger(loggerName string) *logrus.Logger {
 	myFormatter.LoggerName = loggerName
 	myFormatter.TimestampFormat = LogDefaultTimestampFormat
 	myFormatter.LogFormat = LogDefaultLogFormat
-	myFormatter.DisableColors = false
+	myFormatter.DisableColors = true
 
 	logger := &logrus.Logger{
 		Out:       os.Stdout,
